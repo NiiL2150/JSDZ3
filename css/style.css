@@ -1,0 +1,153 @@
+* {
+  color: inherit;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fbf2e9;
+}
+
+#linkList {
+  list-style-type: circle;
+}
+
+#linkList li {
+  padding: 3px;
+  text-underline-offset: 2px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+#linkList li * {
+  -webkit-transition: inherit;
+  transition: inherit;
+  color: #444077;
+}
+
+#linkList li *:hover {
+  color: #0bb;
+}
+
+.hidden {
+  display: none;
+}
+
+#treeOfDir {
+  display: inline-block;
+}
+
+.marked {
+  background-color: #ffa984;
+}
+
+th,
+td {
+  border: 1px solid #000;
+}
+
+.darkener {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: #00000077;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.coolModal {
+  text-align: center;
+  background-color: #fbf2e9;
+  z-index: 3;
+  position: fixed;
+  top: -20vh;
+  left: 20vw;
+  width: 60vw;
+  height: 20vh;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.coolModal.load {
+  top: 10vh;
+}
+
+.coolModal button {
+  width: 80%;
+}
+
+#svetofor-interface {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#svetofor-interface #svetofor {
+  margin-right: 20px;
+  border: 2px solid #888;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#svetofor-interface #svetofor div {
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+  background-color: #888;
+  border-radius: 50%;
+}
+
+#svetofor-interface #svetofor #redlight.active {
+  background-color: #f00;
+}
+
+#svetofor-interface #svetofor #yellowlight.active {
+  background-color: #fa0;
+}
+
+#svetofor-interface #svetofor #greenlight.active {
+  background-color: #0f0;
+}
+
+#svetofor-interface #svetofor-button {
+  background-color: #ddd;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 5px;
+  border-bottom: 2px solid #888;
+  border-right: 2px solid #888;
+}
+
+#tooltip-buttons-container .button-container {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+#tooltip-buttons-container .button-container .tooltip {
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  padding: 6px;
+  top: -35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #fff;
+  background-color: #6630dd;
+}
+
+#tooltip-buttons-container .button-container .tooltip.below {
+  top: auto;
+  bottom: -35px;
+}
+
+#btn2 {
+  margin-left: 100px;
+}

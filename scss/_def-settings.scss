@@ -1,0 +1,10 @@
+@import "variables";
+
+* {
+  color: inherit;
+  font-family: $def-font;
+}
+
+body {
+  background-color: $def-bg-color;
+}

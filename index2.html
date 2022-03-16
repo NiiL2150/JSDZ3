@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript DZ 3; 2</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body onload="pageOnLoad()">
+        <div id="tooltip-buttons-container">
+            <div class="button-container">
+                <button>Button 1</button>
+            </div>
+            <br />
+            <br />
+            <div id="btn2" class="button-container">
+                <button>Button 2</button>
+            </div>
+        </div>
+        <p>Enter your name (no digits):</p>
+        <input id="digitlessInput" oninput="textChanged()" />
+        <br />
+        <br />
+        <button onclick="toggleModal()">Open modal</button>
+        <div id="darkener" class="darkener hidden"></div>
+        <div id="coolModal" class="coolModal hidden">
+            <h1>Hello from modal window!</h1>
+            <button onclick="toggleModal()">Close me! :D</button>
+        </div>
+        <br />
+        <br />
+        <div id="svetofor-interface">
+            <div id="svetofor">
+                <div id="redlight" class="active"></div>
+                <div id="yellowlight"></div>
+                <div id="greenlight"></div>
+            </div>
+            <button id="svetofor-button" onclick="changeColor()">next</button>
+        </div>
+        <script src="js/script2.js"></script>
+    </body>
+</html>
